@@ -1,21 +1,21 @@
-  name:CI_Pipeline
+  name: CI_Pipeline
   on:
     push:
       branches: [main]
   jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout_code
-          uses: actions/checkout@v5
-        - name: Set up Node.js
-          uses: actions/setup-node@v3
-          with:
-            node-version: '22'
-        - name: Install dependencies
-          run: npm install
-        - name: Run_tests
-          run: npm test
+   build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout_code
+        uses: actions/checkout@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install
+      - name: Run_tests
+        run: npm test
 
 
 # []: new line with 2 space and - for items
