@@ -1,0 +1,8 @@
+services:
+  backend:
+    image: adityasingh239/backend-api:latest
+    container_name: backend
+    restart: always
+    ports:
+      - "3000:3000"
+
